@@ -1,0 +1,12 @@
+*/python
+*.mgr
+*.mgr.1
+*.mgr.2
+*.prt.1
+*.prt.2
+*.csv
+*.aux
+*.log
+*.out
+*.gz
+*.toc
