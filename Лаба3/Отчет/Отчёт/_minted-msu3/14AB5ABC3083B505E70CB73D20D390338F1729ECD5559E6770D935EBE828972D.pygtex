@@ -1,0 +1,20 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kr}{input} \PYG{n}{U0}\PYG{p}{,} \PYG{n}{M0}\PYG{p}{;}
+
+\PYG{n}{init} \PYG{n}{x1} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{x2} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{x3} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{y1} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{y2} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{z1} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{z2} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{z3} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{u1} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{u2} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{u3} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{s} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{p}{;}
+
+\PYG{k+kr}{output} \PYG{n}{x1}\PYG{p}{,} \PYG{n}{x2}\PYG{p}{,} \PYG{n}{x3}\PYG{p}{,} \PYG{n}{y1}\PYG{p}{,} \PYG{n}{y2}\PYG{p}{,} \PYG{n}{z1}\PYG{p}{,} \PYG{n}{z2}\PYG{p}{,} \PYG{n}{z3}\PYG{p}{,} \PYG{n}{u1}\PYG{p}{,} \PYG{n}{u2}\PYG{p}{,} \PYG{n}{u3}\PYG{p}{,} \PYG{n}{s}\PYG{p}{;}
+
+\PYG{n}{x1\PYGZsq{} = \PYGZhy{}2071.132*x1 + 1014.733*x2 + 1014.733 * x3 + (314 + 314*s)*y1;}
+\PYG{n}{x2\PYGZsq{}} \PYG{o}{=} \PYG{l+m+mf}{3.034}\PYG{o}{*}\PYG{n}{x1} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{6.193}\PYG{o}{*}\PYG{n}{x2} \PYG{o}{+} \PYG{l+m+mf}{3.34}\PYG{o}{*}\PYG{n}{x3} \PYG{o}{+} \PYG{l+m+mf}{0.378}\PYG{o}{*}\PYG{n}{u1}\PYG{p}{;}
+\PYG{n}{x3\PYGZsq{} = 78.069*x1 + 78.069*x2 \PYGZhy{} 159.344*x3;}
+\PYG{n}{y1\PYGZsq{}} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{1606.256}\PYG{o}{*}\PYG{n}{y1} \PYG{o}{+} \PYG{l+m+mf}{1479.609}\PYG{o}{*}\PYG{n}{y2} \PYG{o}{+} \PYG{p}{(}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{314} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{314}\PYG{o}{*}\PYG{n}{s}\PYG{p}{)}\PYG{o}{*}\PYG{n}{x1}\PYG{p}{;}
+\PYG{n}{y2\PYGZsq{} = 97.310*y1 \PYGZhy{} 105.640*y2;}
+\PYG{n}{z1\PYGZsq{}} \PYG{o}{=} \PYG{n}{z2}\PYG{p}{;}
+\PYG{n}{z2\PYGZsq{} = z3;}
+\PYG{n}{z3\PYGZsq{}} \PYG{o}{=} \PYG{o}{\PYGZhy{}}\PYG{l+m+mf}{33949.6}\PYG{o}{*}\PYG{n}{z1} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{6989.92}\PYG{o}{*}\PYG{n}{z2} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{45}\PYG{o}{*}\PYG{n}{z3} \PYG{o}{+} \PYG{l+m+mi}{2000}\PYG{o}{*}\PYG{n}{M0} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{100000}\PYG{o}{*}\PYG{n}{s}\PYG{p}{;}
+\PYG{n}{u1\PYGZsq{} = u2 + 33.33*U0;}
+\PYG{n}{u2\PYGZsq{}} \PYG{o}{=} \PYG{n}{u3} \PYG{o}{+} \PYG{l+m+mf}{2777.777}\PYG{o}{*}\PYG{n}{U0}\PYG{p}{;}
+\PYG{n}{u3\PYGZsq{} = \PYGZhy{}55555.55*u1 \PYGZhy{} 4444.44*u2 \PYGZhy{} 116.66*u3 + 16666.66*U0 \PYGZhy{} 44444.44*sqrt( (8.18000000*x1 \PYGZhy{} 4.0100000*x2 \PYGZhy{} 4.010000*x3) * (8.18000000*x1 \PYGZhy{} 4.0100000*x2 \PYGZhy{} 4.010000*x3) + (6.34700000*y1 \PYGZhy{} 5.847000*y2) * (6.34700000*y1 \PYGZhy{} 5.847000*y2) );}
+\PYG{n}{s\PYGZsq{}}  \PYG{o}{=} \PYG{l+m+mf}{0.303}\PYG{o}{*}\PYG{n}{z1} \PYG{o}{\PYGZhy{}} \PYG{l+m+mf}{1.77}\PYG{o}{*}\PYG{n}{x1}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mf}{1.0856}\PYG{o}{*}\PYG{n}{y1} \PYG{o}{\PYGZhy{}} \PYG{n}{y2}\PYG{p}{)} \PYG{o}{+} \PYG{l+m+mf}{1.215}\PYG{o}{*}\PYG{n}{y1}\PYG{o}{*}\PYG{p}{(}\PYG{l+m+mf}{2.041}\PYG{o}{*}\PYG{n}{x1} \PYG{o}{\PYGZhy{}} \PYG{n}{x2} \PYG{o}{\PYGZhy{}} \PYG{n}{x3}\PYG{p}{);}
+\end{Verbatim}
